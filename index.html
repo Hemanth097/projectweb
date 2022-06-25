@@ -2,10 +2,17 @@
 <html>
 <head>
 	<title>Baby World</title>
+
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width = device - width, initial-scale = 1.0">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
 </head>
 <body>
 	<div class="header">
@@ -13,16 +20,21 @@
 			<div class="navbar">
 				<div class="logo">
 					<img src="images/logo.png" width="125px">
+
 				</div>
 				<nav>
-					<ul>
+					<ul id="MenuItems">
 						<li><a href="">Home</a></li>
-						<li><a href="">products</a></li>
+						<li><a href="products.html">products</a></li>
 						<li><a href="">About</a></li>
 						<li><a href="">Contact</a></li>
 						<li><a href="">Account</a></li>
 					</ul>
 				</nav>
+
+				<img src="images/icons/cart.png" alt="cart" width="30px">
+				<img src="images/logo.png" class="menu-icon" onclick="menutoggle()">
+					
 			</div>
 
 			<div class="row">
@@ -50,6 +62,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- categories -->
 	<div class="catergories">
 		<div class="small-container">
 			<div class="row">
@@ -66,8 +80,249 @@
 			</div>
 		</div>
 	</div>
+
+	<!--products-->
 	<div class="small-container">
-		<h2></h2>
+		<div class="title">
+			<h2>Featured Products</h2>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/logo.png">
+				<h4>Baby World</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</div>
+				<p>rs. 20,00,000</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>rs. 200</p>
+			</div>
+		</div>
 	</div>
+	<div class="small-container">
+		<div class="title">
+			<h2>Recent Products</h2>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/logo.png">
+				<h4>Baby World</h4>
+				<p>rs. 20,00,000</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/logo.png">
+				<h4>Baby World</h4>
+				<p>rs. 20,00,000</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+			<div class="col-4">
+				<img src="images/rc_car.png">
+				<h4>RC car</h4>
+				<p>rs. 200</p>
+			</div>
+		</div>
+
+	</div>
+	<div class = "offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/rc_car.png" class="offer-img">
+				</div>
+				<div class="col-2">
+					<p>Exclusively Availably on BabyWorld</p>
+					<h1>RC F1 car</h1>
+					<small>"The Traxxas XO-1 is the fastest RC car, full stop. The largest brushless motor on offer propels the car from 1 to 60 in 2.5 seconds.The cars are designed for running on dirt and more recently, carpets and artificial turfs; both featuring jumps. The buggies feature independent suspension, long-travel shock absorbers, and covered transmission and radio compartment to keep them running in extreme conditions."</small><br>
+					<a href="" class="btn">Buy Now &#8594;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="testimonial">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="images/rc_car.png">
+					<h3>Rc car </h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="images/rc_car.png">
+					<h3>Rc car </h3>
+				</div>
+				<div class="col-3">
+					<i class="fa fa-quote-left"></i>
+					<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
+					<div class="rating">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star-half-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<img src="images/rc_car.png">
+					<h3>Rc car </h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!------brands----->
+	<div class="brands">
+		<div class="row">
+			<div class="col-5">
+				<img src="images/rc_car.png">
+			</div>
+			
+			<div class="col-5">
+				<img src="images/rc_car.png">
+			</div>
+			<div class="col-5">
+				<img src="images/rc_car.png">
+			</div>
+			<div class="col-5">
+				<img src="images/rc_car.png">
+			</div>
+			<div class="col-5">
+				<img src="images/rc_car.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our app</h3>
+					<p>Download app for andriod and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="images/rc_car.png">
+						<img src="images/rc_car.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/rc_car.png">
+					<p>RC F1 cars are the best.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">copyright 2022 - Hemanth Creations</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var MenuItems = document.getElementById('MenuItems');
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if (MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "300px";
+			}else{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>>
+
+
 </body>
 </html>
